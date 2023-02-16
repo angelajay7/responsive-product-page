@@ -31,13 +31,13 @@ body {
 }
 
 h1{
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xxl);
   font-weight: 500;
   margin: 0;
 }
 
 h2 {
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-lg);
   text-align:center;
   margin: 1em;
 }
