@@ -53,10 +53,19 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 3em #f4f4f4 solid;
+  border-bottom: 4px #f4f4f4 solid;
+}
+
+nav ul {
+  font-size: var(--font-size-md);
+  display: flex;
+  gap: 2em;
+  text-transform: uppercase;
+  margin-right: auto;
+  list-style-type: none;
+}
 
 
- }
 img {
   display: block;
   max-width: 100%;
