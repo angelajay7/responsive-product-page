@@ -56,7 +56,7 @@ p {
   align-items: center;
   border-bottom: 4px #f4f4f4 solid;
 }
-
+              
 nav ul {
   font-size: var(--font-size-md);
   display: flex;
@@ -66,6 +66,10 @@ nav ul {
   list-style-type: none;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
 img {
   display: block;
   max-width: 100%;
@@ -85,6 +89,16 @@ img {
   border-radius: 0.3em;
 }
 
+.bite {
+  margin: 0 .25em;
+  gap: 2em;
+
+}
+
+.bite h1 {
+  font-size: var(--font-size-xl);
+  font-weight: 300;
+}
 #first {
   grid-area: 1 / 1/ span 3 / span 3;
 
@@ -104,9 +118,22 @@ button {
   border-radius: 0.3em;
 }
 
+button a {
+  text-decoration: none;
+  font-weight: bold;
+  color:#fff
+}
+
 .the-dough {
   border-top: 3px #f4f4f4;
  
+}
+.the-dough div {
+display: flex;
+}
+
+.bite .text {
+  font-size: var(--font-size-base)
 }
 
 .quotes {
@@ -139,25 +166,25 @@ footer {
 }
 
 @media only screen and (min-width: 38em) {
-  .valtines-collection {
+  .valentines-collection {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
 
   #first {
-    grid-areas: 1 / 1;
-  }
-
-  .the-dough {
-    display: flex;
-    gap: 1em;
+    grid-area: 1 / 1;
   }
 
   figure {
     display: flex;
   }
 
-  .types.try {
+  .types .try {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 60em) {
+  .big {
+    display: flex;
   }
 }
